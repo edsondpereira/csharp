@@ -31,6 +31,7 @@ namespace Teste_GitHub
         {
             this.lblNome = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
+            this.btnConfirmar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNome
@@ -49,11 +50,21 @@ namespace Teste_GitHub
             this.txtNome.Size = new System.Drawing.Size(707, 22);
             this.txtNome.TabIndex = 1;
             // 
+            // btnConfirmar
+            // 
+            this.btnConfirmar.Location = new System.Drawing.Point(309, 111);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(163, 77);
+            this.btnConfirmar.TabIndex = 2;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.UseVisualStyleBackColor = true;
+            // 
             // frmGitHub_Teste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblNome);
             this.Name = "frmGitHub_Teste";
@@ -68,6 +79,7 @@ namespace Teste_GitHub
 
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Button btnConfirmar;
     }
 }
 
