@@ -1,0 +1,74 @@
+// O csharp é casesentitive, ou seja: distingue letras maiúsculas de minúsculas
+
+csharp
+O que são variáveis?
+Permite armazenar dados, do tipo numérico inteiro, texto, numérico com casas decimais e lógico --> verdadeiro ou falso
+Exemplo:
+Variável do tipo texto, denominada como string:
+string nome;
+
+Regras para criação de variáveis:
+- Não pode ter espaços entre o nome, bem como caracteres da língua portuguesa. Exemplo:
+errado --> Código do aluno 
+O correto é: Codigo_Aluno
+Não pode iniciar com número. Exemplo:
+errado --> 1Bimestre
+correto --> Bimestre1
+
+Python, c#, javascript
+HTML e CSS
+
+Projeto Cidades
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Projeto Cidades");
+		Console.WriteLine("Digite o nome da cidade:");
+		string cidade = ""; // Variável do tipo string (armazena texto)
+		cidade = Console.ReadLine();
+		// O csharp é case sentitive, ou seja: distingue letras maiúsculas de minúsculas
+		Console.WriteLine("Digite o estado que você mora:");
+		string estado = Console.ReadLine();
+		Console.WriteLine("Digite seu cfp:");
+		string cpf = "";
+		cpf = Console.ReadLine();
+		
+		// Exibindo os dados
+		Console.WriteLine("===============================");
+		Console.WriteLine("Cidade: " + cidade);
+		Console.WriteLine("Estado: " + estado);
+		Console.WriteLine("CPF: " + cpf);		
+	}
+}
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Média de 2 Notas");
+		// Declaração das variáveis
+		Console.WriteLine("Nome do aluno: ");
+		string aluno = "";
+		aluno = Console.ReadLine();
+		Console.WriteLine("Disciplina: ");
+		string disciplina = "";
+		disciplina = Console.ReadLine();
+		double nota1=0;
+		nota1 = Convert.ToDouble(Console.ReadLine());
+		double nota2=0;
+		nota2 = Convert.ToDouble(Console.ReadLine());
+		double media = (nota1 + nota2) / 2;
+		Console.WriteLine("Média: " + media);
+	}
+	
+}
+
+
+
+
+
